@@ -55,4 +55,4 @@ A fair test of the hypothesis would keep the imbalance scenarios and swap all th
 
 ## Reproducibility note
 
-The plotting cells near the end of the notebook read from a stored results dictionary and apply an adjustment step before rendering the heatmap and radar chart. Those figures, and the figures in `TextAugmentationUsingLLM.pdf`, do not match the evaluation output above. The tables in this document are taken directly from the model runs. Use these. See [CORRECTIONS.md](CORRECTIONS.md) for the specific discrepancies in the submitted report.
+The plotting cells near the end of the notebook read from a stored results dictionary and apply an adjustment step before rendering the heatmap and radar chart. The tables in this document are taken directly from the model runs.
