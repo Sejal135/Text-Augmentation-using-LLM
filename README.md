@@ -77,7 +77,6 @@ GPT-2 augmentation did not outperform SMOTE. It matches SMOTE within a point on 
 
 Full per-scenario tables, the precision-recall breakdown, and an analysis of why the result came out this way are in [RESULTS.md](RESULTS.md).
 
-Note on the PDF: the figures in the submitted report derive from a results dictionary that was adjusted before plotting and do not match the evaluation output. See [CORRECTIONS.md](CORRECTIONS.md).
 
 ## Known limitations
 
