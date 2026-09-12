@@ -7,8 +7,6 @@ Improving text classification on under-represented categories by generating synt
 - Sejal Agarwal, UMass Amherst
 - Siddharth Jain, UMass Amherst
 
-Course project, CS682.
-
 ## What this repository contains
 
 - `text_augmentation_evaluation.ipynb`: the full experiment, from dataset loading through evaluation.
