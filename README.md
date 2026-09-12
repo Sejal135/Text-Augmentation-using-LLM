@@ -71,11 +71,13 @@ A Hugging Face login cell is included for gated model access. It is not required
 
 ## Results
 
-The headline finding is directional and holds across scenarios: the imbalanced baseline drops sharply on minority-class recall, and both balancing strategies recover a substantial part of that loss. SMOTE tends to recover recall by over-predicting the minority class, which costs precision. Generative augmentation produces a more balanced precision and recall profile, which is what F1 captures.
+Both balancing strategies recover most of what imbalance destroys. Minority-class F1 falls as low as 0.02 on the imbalanced baseline and returns to the 0.75 to 0.85 range after balancing, against a 0.86 ceiling from the original balanced dataset.
 
-Full per-scenario metrics, heatmaps, and the precision-recall comparison are in the PDF.
+GPT-2 augmentation did not outperform SMOTE. It matches SMOTE within a point on three of the four imbalance scenarios and underperforms on progressive rarity. The useful finding is the shape of that loss: under the most extreme imbalance, augmentation produces the highest minority-class precision in the experiment, 0.92, while recall drops to 0.41. The synthetic text was coherent enough to sharpen the decision boundary but too generic to widen it.
 
-Note on reproducing the figures: the final evaluation section reads from a stored results dictionary rather than recomputing from the model runs above it, and applies an adjustment step to the SMOTE and augmented entries before plotting. If you rerun this, regenerate those metrics directly from `evaluate_augmented_datasets` rather than relying on the stored values.
+Full per-scenario tables, the precision-recall breakdown, and an analysis of why the result came out this way are in [RESULTS.md](RESULTS.md).
+
+Note on the PDF: the figures in the submitted report derive from a results dictionary that was adjusted before plotting and do not match the evaluation output. See [CORRECTIONS.md](CORRECTIONS.md).
 
 ## Known limitations
 
