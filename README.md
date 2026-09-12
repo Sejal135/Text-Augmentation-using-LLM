@@ -11,7 +11,7 @@ Course project, CS682.
 
 ## What this repository contains
 
-- `Evaluation_of_Text_Augemntation_Using_LLMs.ipynb`: the full experiment, from dataset loading through evaluation.
+- `text_augmentation_evaluation.ipynb`: the full experiment, from dataset loading through evaluation.
 - `TextAugmentationUsingLLM.pdf`: the write-up covering motivation, method, and results.
 
 ## The problem
@@ -90,3 +90,7 @@ Note on reproducing the figures: the final evaluation section reads from a store
 - Add a filtering stage: classify each generated sample before accepting it, deduplicate against the originals, and check for distribution drift.
 - Use a larger instruction-tuned generator with prompts conditioned on the specific gap in each imbalance scenario, and measure how much of the improvement comes from model size versus prompt design.
 - Validate on a real imbalanced dataset from a domain where the minority class matters, such as fraud detection or clinical text.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
